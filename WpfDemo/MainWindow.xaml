@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="10"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="10"/>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="10"/>
+        </Grid.RowDefinitions>
+        
+        <Button Grid.Row="3" Grid.Column="2" Content="A"/>
+        <Button Grid.Row="3" Grid.Column="4" Content="B"/>
+        <Label Grid.Row ="1" Grid.Column="2" Content="Title of App"/>
+        <Label Grid.Row ="2" Grid.Column="2" Content="Contents"/>
 
     </Grid>
 </Window>
